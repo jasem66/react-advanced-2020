@@ -1,8 +1,9 @@
 import React from 'react'
+import Index from './tutorial/6-useReducer/setup/index'
 function App() {
   return (
     <div className='container'>
-      <h2>Advanced Tutorial</h2>
+<Index />
     </div>
   )
 }
