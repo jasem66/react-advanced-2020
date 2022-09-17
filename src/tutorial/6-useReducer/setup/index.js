@@ -4,7 +4,35 @@ import { data } from '../../../data';
 // reducer function
 
 const Index = () => {
-  return <h2>useReducer</h2>;
-};
+const reducer =(state,action)=>{
 
-export default Index;
+}
+  const defaultState ={
+    people : [data],
+    name : false,
+  }
+
+  const [name, setName] = useState('')
+  const [state, dispatch] = useReducer(reducer,defaultState)
+
+  const handleSubmit =(e)=>{
+e.preventDefault()
+  }
+
+  return (
+    <div>
+      <form action="">
+        <input type="text" 
+        onChange={(e)=>setName(e.target.value)}
+        value={name} />
+        <button>Add</button>
+      </form>
+      <div>{
+        data.map((item)=>{
+         return <p>{item.name}</p>
+        })
+      }</div>
+    </div>
+  )
+  }
+export default Index
