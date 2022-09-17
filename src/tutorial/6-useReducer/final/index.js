@@ -23,7 +23,7 @@ const Index = () => {
   };
   const closeModal = () => {
     dispatch({ type: 'CLOSE_MODAL' });
-  };
+  }
   return (
     <>
       {state.isModalOpen && (
