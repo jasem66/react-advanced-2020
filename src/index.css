@@ -318,3 +318,9 @@ p {
   text-transform: capitalize;
   cursor: pointer;
 }
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
